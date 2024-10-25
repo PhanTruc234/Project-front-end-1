@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=5, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td, tr{
+            border: 1px solid black;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Câu 1 : sử dụng iframe</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.395986755048!2d105.81632947449596!3d21.016835888189522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7b67afb315%3A0xb9ad2fb0a76f1d96!2zbmfDtSAyNTYgUC4gxJDhurduZyBUaeG6v24gxJDDtG5nLCBDaOG7oyBE4burYSwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSAxMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1728810073425!5m2!1svi!2s" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1>Câu 2: Bài tập về form</h1>
+    <form action="">
+        <label for="ten">Họ và tên:</label><br>
+        <input type="text" id="ten" name="ho_ten" placeholder="ví dụ:phan minh truc" required><br>
+        <label for="mail">Email:</label><br>
+        <input type="email" name="dia_chi" id="mail" placeholder="ví dụ:phantruc313@gmail.com" required><br>
+        <label for="passw">Mật khẩu:</label><br>
+        <input type="password" name="mat_khau" id="passw" required><br>
+        <button>Đăng kí</button><br>
+    </form>
+    <form action="">
+        <input type="text" placeholder="Nhập nội dung tìm kiếm..." required>
+        <button>Tìm kiếm</button>
+    </form>
+    <h1>Câu 3: Bài tập để ôn về form</h1>
+    <form action="">
+        <label for="text">kiểu text:</label><br>
+        <input type="text" name="Name" id="text" placeholder="Nhập ho tên" required><br>
+        <label for="email">Kiểu Email:</label><br>
+        <input type="email" name="Email" id="email" placeholder="Nhập email" required><br>
+        <label for="password">KIểu password:</label><br>
+        <input type="password" name="Password" id="password" required><br>
+        <label for="number">Kiểu NUmber:</label><br>
+        <input type="number" name="Number" id="number"><br>
+        <label for="date">Kiểu date:</label><br>
+        <input type="date" name="Date" id="date" required><br>
+        <label for="time">Kiểu Time:</label><br>
+        <input type="time" name="Time" id="time" required><br>
+        <label for="file">Kiểu File:</label><br>
+        <input type="file" name="File" id="file" required><br>
+    </form>
+    <form action="">
+        <label for="">KIểu radio:</label><br>
+        <input type="radio" name="Men" id="men">
+        <label for="men">Nam</label><br>
+        <input type="radio" name="Men" id="women">
+        <label for="women">Nữ</label><br>
+        <input type="radio" name="Men" id="khac">
+        <label for="khac">khác</label><br>
+        <label for="range">Kiểu range</label><br>
+        <input type="range" name="volume" id="range"><br>
+        <label for="color">Kiểu color</label><br>
+        <input type="color" name="Color" id="color"><br>
+    </form>
+    <h1>THẻ select</h1>
+    <form>
+        <label for="">chọn danh mục</label><br>
+        <select name="product" id=""><br>
+            <option value="quan">Quần</option>
+            <option value="ao">Áo</option>
+            <option value="giay">Giày</option>
+        </select>
+    </form>
+    <form action="">
+        <label for="textra">Nội dung</label><br>
+        <textarea name="noi_dung" id="textra" cols="30" rows="10"></textarea><br>
+    </form>
+    <table width="800">
+        <tbody>
+            <tr>
+                <td>Họ tên</td>
+                <td colspan="6">
+                    <form action="">
+                        <input type="text" name="name" id="" placeholder="Vui lòng nhập họ tên" required>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td colspan="6">
+                    <form action="">
+                        <input type="password" name="password" id="" placeholder="Vui lòng nhập nhập khẩu" required>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td colspan="6">
+                    <form action="">
+                        <input type="radio" name="Gioi" id="men1">
+                        <label for="men1">Nam</label>
+                        <input type="radio" name="Gioi" id="woman">
+                        <label for="woman">Nữ</label>
+                        <input type="radio" name="Gioi" id="khac1">
+                        <label for="khac1">khác</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tuổi</td>
+                <td colspan="6" rowspan="2">
+                    <form action="">
+                        <input type="text" name="" id="" value="15">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 5 cột 3</td> -->
+            </tr>
+            <tr>
+                <td>Hàng 6 cột 1</td>
+                <td colspan="6">Hàng 6 cột 2</td>
+            </tr>
+            <tr>
+                <td>Hàng 7 cột 1</td>
+                <td colspan="6">Hàng 7 cột 2</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Hàng 8 cột 1</td>
+                <td colspan="6" rowspan="3">Hàng 8, 9 và 10 cột 2</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 9 cột 3</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Hàng 10 cột 3</td> -->
+            </tr>
+            <tr>
+                <td>Hàng 11 cột 1</td>
+                <td colspan="6">Hàng 11 cột 2</td>
+            </tr>
+            <tr>
+                <td>Hàng 12 cột 1</td>
+                <td colspan="6">Hàng 12 cột 2</td>
+            </tr>
+            <tr>
+                <td>Hàng 13 cột 1</td>
+                <td colspan="6">Hàng 13 cột 2</td>
+                <!-- <td>Hàng 13 cột 3</td> -->
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về position</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .menu{
+            background-color: orange;
+            border-radius: 8px;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        .menu-lis{
+            list-style: none;
+            padding: 0;
+        }
+        .menu-lis>li{
+            display: inline-block;
+            padding: 20px;
+            font-size: 30px;
+            color: #fff;
+        }
+        .body{
+            width: 1800px;
+            height: 700px;
+            background-color: rgb(233, 227, 227);
+            position: relative;
+            margin-top: 50px;
+            border-radius: 10px;
+            margin: auto;
+        }
+        .box{
+            position: absolute;
+            /* text-align: center; */
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            padding: 40px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+        .box2{
+            right: 10px;
+            top: 10px;
+        }
+        .box3{
+            right: 20px;
+            bottom: 50px;
+        }
+        .box4{
+            left: 30px;
+            bottom: 50px;
+        }
+        .foot{
+            width: 1730px;
+            background-color: rgb(34, 34, 186);
+            border-radius: 10px;
+            padding: 40px 40px;
+            margin: auto;
+            margin-top: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .foot>h3{
+            color: #fff;
+            font-size: 25px;
+            z-index: 999;
+        }
+        h3::first-letter{
+            font-size: 60px;
+        }
+        .foot::before{
+            content: "";
+            display: block;
+            width: 160px;
+            height: 160px;
+            background-color: rgb(55, 47, 47);
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            opacity: 0.3;
+        }
+        .foot::after{
+            content: "";
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(55, 47, 47);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20px;
+            right: -7px;
+            opacity: 0.3;
+        }
+        .call{
+            width: 25px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 50%;
+            background-color: green;
+            right: 60px;
+            position: fixed;
+            bottom: 20px;
+        }
+        .fa-phone{
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài tập về Position</h1>
+    <div class="menu">
+        <ul class="menu-lis">
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Sản phẩm</li>
+            <li>Tin tức</li>
+            <li>Liên hệ</li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="box box1">
+            1
+        </div>
+        <div class="box box2">
+            2
+        </div>
+        <div class="box box3">
+            3
+        </div>
+        <div class="box box4">
+            4
+        </div>
+    </div>
+    <div class="foot">
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, non, impedit, vel molestias quas asperiores culpa pariatur possimus iusto magnam placeat dolor eaque laborum blanditiis. Sit earum ipsum vel libero.
+            Repellat error iusto repellendus laborum consectetur voluptatem eveniet delectus laboriosam at. Quo recusandae exercitationem laborum numquam voluptates saepe quia ab, nam veritatis! Sapiente sunt sed architecto, recusandae itaque quae? Voluptatum!
+            Ducimus quidem vitae tempora itaque accusantium ratione omnis dolorum alias enim harum maxime, facere sit illum accusamus debitis corporis perspiciatis officiis facilis suscipit quasi ullam consequatur corrupti magnam. Iste, vitae.
+        </h3>
+    </div>
+    <div class="call">
+        <i class="fa-solid fa-phone"></i>
+    </div>
+</body>
+</html>
